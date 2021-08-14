@@ -23,7 +23,12 @@ export default class TeamSection extends React.Component {
                             <img src={withPrefix(photo)} alt={photoAlt} />
                         </figure>
                     )}
-                    
+                    <div className="card__body">
+                        <header className="card__header">
+                            <h3 className="h4 card__title">{name}</h3>
+                        </header>
+                        {bio && <div className="card__copy">{markdownify(bio)}</div>}
+                    </div>
                 </div>
             </div>
         )
