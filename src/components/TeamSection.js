@@ -9,7 +9,7 @@ export default class TeamSection extends React.Component {
         if (!teamMember) {
             return null;
         }
-        //const photo = _.get(teamMember, 'photo');
+        const photo = _.get(teamMember, 'photo');
         const photoAlt = _.get(teamMember, 'photo_alt', '');
         const firstName = _.get(teamMember, 'first_name', '');
         const lastName = _.get(teamMember, 'last_name', '');
